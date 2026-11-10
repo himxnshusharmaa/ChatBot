@@ -1,4 +1,8 @@
 streamlit
+langchain
+langchain-groq
+python-dotenv
+streamlit
 langchain-huggingface
 transformers
 torch
