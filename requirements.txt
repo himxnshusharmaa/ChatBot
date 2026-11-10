@@ -3,3 +3,4 @@ langchain-huggingface
 transformers
 torch
 accelerate
+python-dotenv
