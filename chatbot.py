@@ -17,7 +17,20 @@ model = init_chat_model(
     temperature=0.7,
 )
 
-messages = [SystemMessage(content="You are a helpful assistant.")]
+print("choose your AI model")
+print("press 1 for angry mode")
+print("press 2 for funny mode")
+print("press 3 for sad mode")
+
+choice = int(input("tell your response: "))
+
+if choice == 1:
+    mode = "you are an angry AI agent. you are very rude and aggressive in your responses."
+elif choice == 2:
+    mode = "you are a funny AI agent. you are very humorous and witty in your responses."
+elif choice == 3:   
+    mode = "you are a sad AI agent. you are very emotional and melancholic in your responses."
+messages = [SystemMessage(content=mode)]
 
 print("Welcome! Type 0 to exit.")
 
